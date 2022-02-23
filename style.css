@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*///////////////////////////////////////////
+
+            RESET
+
+////////////////////////////////////////////*
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+    margin:0;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  a {
+    text-decoration: none;
+}
+
+
+
+:root {
+    --clr-light-100: #ffffff;
+    --clr-light-200: #dbdfe2;
+    --clr-primary-400: #66768a;
+    --clr-accent-500: #313a46;
+    --clr-accent-800: #161f2a;
+    --clr-dark-900: rgb(0, 0, 0);
+}
+
+/******************************************
+/* COLORS
+/*******************************************/
+  
+.primary {
+    height: 10em;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-light-100);
+}
+
+
+.light {
+    background-color: var(--clr-light-200);
+    color:var(--clr-dark-900);
+}
+
+.accent-lite {
+    background-color: var(--clr-primary-400);
+}
+
+.white {
+    background-color: var(--clr-light-100);
+    color:var(--clr-dark-900);
+}
+
+.top-section >.video-link {
+    width: 100%;
+    color: var(--clr-light-100);
+}
+
+span {
+    color: var(--clr-accent-500);
+}
+
+
+/******************************************
+/* LAYOUT padding-right: 2.5em;
+/*******************************************/
+.primary-nav {
+    height: 100%;
+
+}
+
+.primary-nav *{
+    width: 5%;
+    float: left;
+}
+
+.primary-nav ul,
+.primary-nav>a {
+    width: 47.5%;
+    font-size: 1.15em;
+}
+.primary-nav>a {
+    float:right;
+    width:max-content;
+}
+
+.primary-nav li {
+    width: 30%;
+    font-weight: 800;
+}
+
+.primary-nav >.donate-link {
+
+    text-align: right;
+    margin: .80em 3em;
+    padding: .40em;
+    background-color: var(--clr-light-100);
+    color: var(--clr-primary-400);
+    border-radius: 6%;
+    font-size: 1.10em;
+    font-weight: 500;
+    
+    /*
+In the future I think it would be easier to list all items in the header that correspond with the nav in a list. Although I can make it look good and try to match them, it might be simplier to make all objects look identically spaced vertically if they are all in a list. ALTHOUGH this is with floats, idk about flex.
+*/
+
+}
+
+
+.top-section {
+    padding: 1em 4em;
+    text-align: center;
+   
+    width: 100%;
+    clear: both;
+    margin-top: -2em;
+    font-size: 2em;
+    height: fit-content;
+}
+
+.top-section > h1 {
+   
+    font-size: 2.15em;
+}
+
+.top-section > p {
+    padding: 1em 4.15em;
+    font-size: .90em ;
+    margin-bottom: 2.35rem;
+}
+
+span {
+    font-style: italic;
+    font-size: .80rem;
+    margin-top: 5.5rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.video-link {
+    color: var(--clr-light-100);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+  
+.mid-section {
+    margin-top: 5em;
+    padding: 2em 4em;
+    text-align: center;
+    height: 30em;
+    width: 100%;
+}
+
+.mid-two {
+    width: 100%;
+    height: 50em;
+    text-align: center;
+    color: var(--clr-accent-500)
+}
+
+.mid-two>section {
+    width: 50%;
+    float: left;
+}
+
+.mid-two p {
+    font-size: 1.35em;
+}
+
+.mid-section>h2 {
+    font-size: 2.60em;
+}
+
+.mid-section>p {
+    font-size: 1.40em;
+    margin: auto 15em auto 15em; 
+}
+
+.empty-one,
+.empty-two {
+    height: 13em;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    width: 50%;
+    position:relative;
+    left: 25%;
+}
+
+.split > h3 {
+    font-size:1.50em;
+}
+
+.split p,
+.last-section p{
+    margin: 1.75rem auto 2.60rem auto;
+    padding: 0 5em;
+}
+
+.split> a,
+.last-section>a {
+    color: var(--clr-accent-500);
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: .70em 3em;
+    border: 1px solid gray;
+}
+
+.last-section p {
+    padding: 0 12em;
+}
+
+/*  
+////////////////////
+        FOOTER  
+/////////////////*/
+
+footer {
+    background-color:var(--clr-accent-800) ;
+    color: #ffffff;
+}
+
+footer *> span {
+    color:#8b929c;
+    font-weight: 600;
+}
+
+.socials>li {
+    float: left;
+    background-color: white;
+    width: 3em;
+    height: 3em;
+    margin: 1.5em 3em auto -1em;
+}
